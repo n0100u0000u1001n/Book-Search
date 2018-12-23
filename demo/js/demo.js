@@ -28,7 +28,7 @@ $(document).ready(function () {
         if (key == '全部') {
             key = '*';
             search('title', key);
-        }else{
+        } else {
             search('category', key);
         }
     });
@@ -87,13 +87,13 @@ function getMore() {
                 }
                 // 显示搜索结果的部分
                 $("#resultSection").show();
-                if (res.length < 10) {
-                    $(".js-load-more").text('没有更多了');
-                } else {
-                    $(".js-load-more").text('加载更多');
-                }
-                $(".js-load-more").show();
             }
+            if (res.length < 10) {
+                $(".js-load-more").text('没有更多了');
+            } else {
+                $(".js-load-more").text('加载更多');
+            }
+            $(".js-load-more").show();
         }
     });
 }
