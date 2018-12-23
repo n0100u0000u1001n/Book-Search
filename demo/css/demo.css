@@ -1,0 +1,127 @@
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron1 {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .jumbotron1 {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+}
+
+.not-search {
+    margin: 15vh;
+}
+
+.jumbotron1-heading {
+    font-weight: 300;
+}
+
+.jumbotron1 .container {
+    max-width: 40rem;
+}
+
+.keyword-input {
+    border-radius: 0;
+}
+
+#resultSection {
+    min-height: calc(100vh - 70px - 342px);
+    background: rgba(255,255,255,0.6);
+    position: relative;
+    top: 170px;
+}
+
+#suggestList {
+    top: 38px;
+    z-index: 2;
+    width: calc(100% - 82px);
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item:first-child {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group-item-action {
+    text-align: left;
+    padding: 6px 12px;
+}
+
+body{
+    background-image: url(../img/background.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+.logo{
+    height: 75px;
+    width: 150px;
+}
+
+
+.header{
+    color:white;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.js-load-more{
+    position: relative;
+    top: 110px;
+    width: 400px;
+    /*默认不显示，ajax调用成功后才决定显示与否*/
+    display:none;
+    border:none;
+}
+#headers{
+    width:100%;position:fixed;top:0;left:0;
+    opacity: 10;
+    z-index:99;
+}
+.headers_font{
+    font-size: 15px;
+    color: white;
+}
+.input_img{
+    position: relative;
+    right: 100px；
+}
+.media1{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin:0px 0px 20px 0px;
+    border-bottom:0.8px solid rgba(0,0,0,0.8); 
+    padding: 5px;
+}
+
+.inputpaper{
+    width: 100%;
+    /* height: 30%; */
+}
